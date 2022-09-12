@@ -1,0 +1,113 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% auto;
+  width: 400px;
+  height: 500px;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.message-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding: 20px;
+}
+.input-message {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+  width: 100%;
+}
+.input-message form {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.input-message input {
+  flex-basis: 75%;
+  padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.input-message button {
+  flex-basis: 20%;
+  background: #67b26f; /* fallback for old browsers */
+  border-radius: 5px;
+  margin-bottom: 3px;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.chat-bubble {
+  padding: 0px 15px;
+  box-sizing: border-box;
+  max-width: 330px;
+  display: inline-block;
+  border-radius: 12px 0 12px 12px;
+  margin: 10px 0;
+}
+
+.chat-bubble-sender {
+  background: #42b549;
+  align-self: flex-start;
+  color: #fff;
+}
+
+.chat-bubble-reciever {
+  background: #f1f1f1;
+  align-self: flex-end;
+}
+
+.chat-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+  padding: 10px 0;
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4ca2cd,
+    #67b26f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
